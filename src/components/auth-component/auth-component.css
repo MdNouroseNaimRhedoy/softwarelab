@@ -1,12 +1,68 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.container {
     display: flex;
-    font-size: 20px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-weight: 700;
-    border: 1px solid black;
-    border-radius: 8px;
-    box-shadow: 1px 1px;
-    height: 300px;
-    width: 350px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    max-width: 400px;
+    margin: 0 auto;
 }
+
+.container form {
+    width: 100%;
+}
+
+.container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container select,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container textarea {
+    height: 100px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.container select {
+    padding: 10px;
+}
+
